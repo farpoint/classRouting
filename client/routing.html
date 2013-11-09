@@ -1,0 +1,30 @@
+<head>
+  <title>Farpoint Routing</title>
+</head>
+
+<body>
+</body>
+
+<template name="home">
+  <p>This is the home page</p>
+</template>
+
+<template name="layout">
+  <h1>My cool website</h1>
+  
+  <ul class="nav">
+    <li><a href="/">Home</a></li>
+    <li><a href="/secret">Secret</a></li>
+  </ul>
+  
+  {{yield}}
+</template>
+
+<template name="secret">
+  <h1>SHHH! Don't tell anyone about this page</h1>
+  <p>{{userName}}</p>
+</template>
+
+<template name="notFound">
+  <h1>404!!! This page doesn't exist!</h1>
+</template>
